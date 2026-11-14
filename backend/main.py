@@ -19,7 +19,7 @@ app = FastAPI(title="WoundWatch API", version="3.1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://woundwatch-ruby.vercel.app", "https://woundwatch-8xmz-one.vercel.app", "http://localhost:3000", "http://localhost:3001"],
+        allow_origins=["https://woundwatch-patient.vercel.app", "https://woundwatch-doctor.vercel.app", "http://localhost:3000", "http://localhost:3001"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
