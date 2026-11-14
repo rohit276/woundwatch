@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = window.API_BASE || 'http://localhost:8000';
+const BASE = window.API_BASE || process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
 const API = axios.create({ baseURL: BASE });
 
